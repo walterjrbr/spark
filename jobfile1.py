@@ -9,7 +9,7 @@ from pyspark.sql.types import FloatType
 #Inicializa sessão spark
 spark = SparkSession \
         .builder \
-        .appName("Processa arquivo de dados exemplo") \
+        .appName("Processa arquivo de dados base exemplo") \
         .getOrCreate()
 
 to_value = lambda v: float(v.replace(",","."))
