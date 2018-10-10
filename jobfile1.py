@@ -6,10 +6,10 @@ from pyspark.sql import functions as F
 from pyspark.sql.types import FloatType
 
 
-
+#Inicializa sessão spark
 spark = SparkSession \
         .builder \
-        .appName("Processa arquivo de dados") \
+        .appName("Processa arquivo de dados exemplo") \
         .getOrCreate()
 
 to_value = lambda v: float(v.replace(",","."))
